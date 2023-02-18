@@ -1,5 +1,10 @@
+from opentelemetry import trace
+
 from random import randint
 from flask import Flask, request
+
+# Acquire a tracer
+tracer = trace.get_tracer(__name__)
 
 app = Flask(__name__)
 
@@ -8,4 +13,8 @@ def roll_dice():
     return str(do_roll())
 
 def do_roll():
-    return randint(1, 6)
+    # This creates a new span that's the child of the current one
+    with tracer.start_as_current_span("do_roll") as rollspan:
+        res = randint(1, 6)
+        rollspan.set_attribute("roll.value", res)
+        return res
