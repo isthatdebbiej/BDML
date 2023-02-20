@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rolling-dice-deployment
+  labels:
+    app: rolling-dice
+spec:
+  selector:
+    matchLabels:
+      app: rolling-dice
+  template:
+    metadata:
+      labels:
+        app: rolling-dice
+    spec:
+      containers:
+      - name: rolling-dice
+        image: rolling-dice:latest
+        ports:
+        - containerPort: 8080
