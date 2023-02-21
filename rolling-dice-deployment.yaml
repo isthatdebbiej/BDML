@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: rolling-dice
-        image: isthatdebbiej/rolling-dice:v1
+        image: isthatdebbiej/rolling-dice:v2
         ports:
         - containerPort: 8080
