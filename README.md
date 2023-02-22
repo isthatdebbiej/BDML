@@ -3,13 +3,13 @@
 In this homework,  I created a flask app that will generate a random number between 1-6 everytime the endpoint \rolldice is called. The code is copied from [Getting Started](https://opentelemetry.io/docs/instrumentation/python/getting-started/). The goal is to let automatic instrumentation generate telemetry data on our behalf. I haved used the opentelemetry-instrument agent in this homework.
 
 On running *opentelemetry-instrument  --traces_exporter console --metrics_exporter console flask run*,  we get the trace with a span which is useful to track the lifetime of a request to the /rolldice route.
-{
-    "name": "do_roll",
-    "context": {
-        "trace_id": "0x7e91fb5b09856d64fb279058c183a01c",
-        "span_id": "0x5747d68929dd2b6d",
-        "trace_state": "[]"
-    },
+{<br />
+    "name": "do_roll",<br />
+    "context": {<br />
+        "trace_id": "0x7e91fb5b09856d64fb279058c183a01c",<br />
+        "span_id": "0x5747d68929dd2b6d",<br />
+        "trace_state": "[]"<br />
+    },<br />
     "kind": "SpanKind.INTERNAL",
     "parent_id": "0x9ea1aa62870d561c",
     "start_time": "2023-02-01T22:58:58.173725Z",
