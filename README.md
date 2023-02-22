@@ -8,4 +8,4 @@ I used cloudlab to install Microk8s, docker and enabled istio. I also created a 
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/k8.png)
 
 To get the Jaegar dashboard running, I enabled Jaegar, hence craeting a namespace under istio-system. The dashbard can be viewed at http://localhost:16686
-![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/k8.png](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/jaeger.png)
+![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/jaeger.png)
