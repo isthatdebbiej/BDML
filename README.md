@@ -34,7 +34,7 @@ On running <h5>opentelemetry-instrument  --traces_exporter console --metrics_exp
         "schema_url": ""<br />
     }<br />
 }<br />
-<h3>Deployment</h3>
+
 I installed Microk8s, docker and enabled istio. I also created a Dockerfile and a k8 config file (rolling-dice-deployment.yaml).<br/>
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/docker.png) I built a docker image and ran it and generated the trace. I pushed it into the registry and created a deployment and exposed it. The trace can be found at trace.txt.<br/>
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/k8.png)
