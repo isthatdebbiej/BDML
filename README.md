@@ -35,10 +35,9 @@ On running <h5>opentelemetry-instrument  --traces_exporter console --metrics_exp
     }<br />
 }<br />
 <h3>Deployment</h3>
-![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/docker.png)
-I installed Microk8s, docker and enabled istio. I also created a Dockerfile and a k8 config file (rolling-dice-deployment.yaml). I built a docker image and ran it and generated the trace. I pushed it into the registry and created a deployment and exposed it. The trace can be found at trace.txt.
+I installed Microk8s, docker and enabled istio. I also created a Dockerfile and a k8 config file (rolling-dice-deployment.yaml).![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/docker.png) I built a docker image and ran it and generated the trace. I pushed it into the registry and created a deployment and exposed it. The trace can be found at trace.txt.
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/k8.png)
-<br?>
+<br/>
 <h3>Metrics</h3>
 I used opentelemetry metrics instrument to capture system performance- system.cpu.time(idle, user, system, etc.), system.memory.usage(used, free, cached, etc.), system.disk.io_time, system.disk.operations etc. The performance was similar for various samples.
 
