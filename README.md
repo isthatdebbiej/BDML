@@ -38,5 +38,8 @@ On running *opentelemetry-instrument  --traces_exporter console --metrics_export
 I installed Microk8s, docker and enabled istio. I also created a Dockerfile and a k8 config file (rolling-dice-deployment.yaml). I built a docker image and ran it and generated the trace. I pushed it into the registry and created a deployment and exposed it. The trace can be found at trace.txt.
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/k8.png)
 
+###Metrics
+I used opentelemetry metrics instrument to capture system performance- system.cpu.time(idle, user, system, etc.), system.memory.usage(used, free, cached, etc.), system.disk.io_time, system.disk.operations etc. The performance was similar for various samples.
+
 To get the Jaegar dashboard running, I enabled Jaegar, hence craeting a namespace under istio-system. The dashbard can be viewed at http://localhost:16686
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/jaeger.png)
