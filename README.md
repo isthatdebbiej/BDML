@@ -4,7 +4,7 @@ In this homework,  I created a flask app that will generate a random number betw
 
 On running *opentelemetry-instrument  --traces_exporter console --metrics_exporter console flask run*,  we get the trace with a span which is useful to track the lifetime of a request to the /rolldice route.
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/docker.png)
-I used cloudlab to install Microk8s, docker and enabled istio. I also created a Dockerfile and a k8 comfig file (rolling-dice-deployment.yaml). I built a docker image and ran it and generated the trace. I pushed it into the registry and created a deployment and exposed it. The trace can be found at tarce.txt.
+I used cloudlab to install Microk8s, docker and enabled istio. I also created a Dockerfile and a k8 comfig file (rolling-dice-deployment.yaml). I built a docker image and ran it and generated the trace. I pushed it into the registry and created a deployment and exposed it. The trace can be found at trace.txt.
 ![alt text](https://github.com/isthatdebbiej/BDML/blob/main/screenshots/k8.png)
 
 To get the Jaegar dashboard running, I enabled Jaegar, hence craeting a namespace under istio-system. The dashbard can be viewed at http://localhost:16686
